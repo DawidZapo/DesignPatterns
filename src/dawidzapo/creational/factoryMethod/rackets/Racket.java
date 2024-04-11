@@ -1,4 +1,4 @@
-package dawidzapo.creational.factoryMethod.buttons;
+package dawidzapo.creational.factoryMethod.rackets;
 
 public interface Racket {
     void smash();

@@ -1,7 +1,7 @@
 package dawidzapo.creational.factoryMethod.factory;
 
-import dawidzapo.creational.factoryMethod.buttons.Racket;
-import dawidzapo.creational.factoryMethod.buttons.WilsonRacket;
+import dawidzapo.creational.factoryMethod.rackets.Racket;
+import dawidzapo.creational.factoryMethod.rackets.WilsonRacket;
 
 public class WilsonFactory extends Factory{
 

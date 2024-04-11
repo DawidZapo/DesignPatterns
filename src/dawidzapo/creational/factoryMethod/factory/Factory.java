@@ -1,6 +1,6 @@
 package dawidzapo.creational.factoryMethod.factory;
 
-import dawidzapo.creational.factoryMethod.buttons.Racket;
+import dawidzapo.creational.factoryMethod.rackets.Racket;
 
 public abstract class Factory {
 
