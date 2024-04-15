@@ -1,6 +1,6 @@
 package dawidzapo.structural.decorator.decorator;
 
-import dawidzapo.structural.decorator.commonInterface.Pizza;
+import dawidzapo.structural.decorator.common_interface.Pizza;
 
 public class MushroomDecorator extends PizzaDecorator{
     public MushroomDecorator(Pizza decoratedPizza) {

@@ -1,6 +1,6 @@
 package dawidzapo.structural.decorator.component;
 
-import dawidzapo.structural.decorator.commonInterface.Pizza;
+import dawidzapo.structural.decorator.common_interface.Pizza;
 
 public class PlainPizza implements Pizza {
 

@@ -1,6 +1,6 @@
 package dawidzapo.structural.decorator.decorator;
 
-import dawidzapo.structural.decorator.commonInterface.Pizza;
+import dawidzapo.structural.decorator.common_interface.Pizza;
 
 public abstract class PizzaDecorator implements Pizza {
     protected Pizza decoratedPizza;

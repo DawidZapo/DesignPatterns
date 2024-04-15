@@ -1,6 +1,6 @@
 package dawidzapo.structural.decorator;
 
-import dawidzapo.structural.decorator.commonInterface.Pizza;
+import dawidzapo.structural.decorator.common_interface.Pizza;
 import dawidzapo.structural.decorator.component.PlainPizza;
 import dawidzapo.structural.decorator.decorator.CheeseDecorator;
 import dawidzapo.structural.decorator.decorator.MushroomDecorator;
