@@ -1,20 +1,20 @@
 package dawidzapo.behavioral.iterator.iterator;
 
-import dawidzapo.behavioral.iterator.associations.Atp;
+import dawidzapo.behavioral.iterator.associations.TennisAssociation;
 import dawidzapo.behavioral.iterator.player.Player;
 
-public class AtpIterator implements PlayerIterator{
-    private Atp atp;
+public class AssociationIterator implements PlayerIterator{
+    private TennisAssociation tennisAssociation;
     private int currentPosition;
 
-    public AtpIterator(Atp atp) {
-        this.atp = atp;
+    public AssociationIterator(TennisAssociation tennisAssociation) {
+        this.tennisAssociation = tennisAssociation;
         this.currentPosition = 0;
     }
 
     @Override
     public boolean hasNext() {
-        return currentPosition < atp.getPlayers().size();
+        return currentPosition < tennisAssociation.getPlayers().size();
     }
 
     @Override
@@ -22,7 +22,7 @@ public class AtpIterator implements PlayerIterator{
         if(!hasNext()){
             return null;
         }
-        Player player = atp.getPlayers().get(currentPosition);
+        Player player = tennisAssociation.getPlayers().get(currentPosition);
 
         currentPosition++;
         return player;

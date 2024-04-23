@@ -6,12 +6,12 @@ import dawidzapo.behavioral.iterator.player.Player;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Atp extends TennisAssociation {
-    private static TennisAssociation instance;
-    private List<Player> players;
-    private Association association;
-    private Atp(){
-        this.association = Association.ATP;
+public class Wta extends TennisAssociation{
+    protected static TennisAssociation instance;
+    protected List<Player> players;
+    protected Association association;
+    private Wta(){
+        this.association = Association.WTA;
         populatePlayers();
     }
 
@@ -20,15 +20,14 @@ public class Atp extends TennisAssociation {
             players = new ArrayList<>();
         }
         players.addAll(List.of(
-                new Player("Nick Kyrgios",45, Association.ATP),
-                new Player("Novak Djokovic",2, Association.ATP),
-                new Player("Jannick Sinner",1, Association.ATP),
-                new Player("Stan Wawrinka",76, Association.ATP),
-                new Player("Huber Hurkacz",7, Association.ATP),
-                new Player("Tommy Paul",12, Association.ATP),
-                new Player("Taylor Fritz",11, Association.ATP)));
+                new Player("Caroline Wozniacki",45, Association.WTA),
+                new Player("Aryna Sabalenka",2, Association.WTA),
+                new Player("Elena Rybakina",1, Association.WTA),
+                new Player("Ons Jabeur",76, Association.WTA),
+                new Player("Magda Linetty",7, Association.WTA),
+                new Player("Magda Frech",12, Association.WTA),
+                new Player("Coco Gauff",11, Association.WTA)));
     }
-
     public static TennisAssociation getInstance(){
         TennisAssociation result = instance;
         if(result != null){
@@ -36,12 +35,11 @@ public class Atp extends TennisAssociation {
         }
         synchronized (Atp.class){
             if(instance == null){
-                instance = new Atp();
+                instance = new Wta();
             }
             return instance;
         }
     }
-
     public List<Player> getPlayers() {
         return players;
     }
