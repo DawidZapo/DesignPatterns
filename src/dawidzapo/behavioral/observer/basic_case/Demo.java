@@ -1,9 +1,9 @@
-package dawidzapo.behavioral.observer;
+package dawidzapo.behavioral.observer.basic_case;
 
-import dawidzapo.behavioral.observer.observer.Observer;
-import dawidzapo.behavioral.observer.observer.Subscriber;
-import dawidzapo.behavioral.observer.subject.LiveScore;
-import dawidzapo.behavioral.observer.subject.Match;
+import dawidzapo.behavioral.observer.basic_case.observer.Observer;
+import dawidzapo.behavioral.observer.basic_case.observer.Subscriber;
+import dawidzapo.behavioral.observer.basic_case.subject.LiveScore;
+import dawidzapo.behavioral.observer.basic_case.subject.Match;
 
 import java.time.LocalDateTime;
 

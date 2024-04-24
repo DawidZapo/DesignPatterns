@@ -1,6 +1,6 @@
-package dawidzapo.behavioral.observer.subject;
+package dawidzapo.behavioral.observer.basic_case.subject;
 
-import dawidzapo.behavioral.observer.observer.Observer;
+import dawidzapo.behavioral.observer.basic_case.observer.Observer;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

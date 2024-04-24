@@ -1,4 +1,4 @@
-package dawidzapo.behavioral.observer.subject;
+package dawidzapo.behavioral.observer.basic_case.subject;
 
 import java.util.ArrayList;
 import java.util.List;
