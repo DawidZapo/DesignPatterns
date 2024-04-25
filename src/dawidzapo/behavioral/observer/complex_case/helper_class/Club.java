@@ -20,4 +20,13 @@ public class Club {
     public void add3Points(){
         points = points + 3;
     }
+
+    @Override
+    public String toString() {
+        return "Club{" +
+                "name='" + name + '\'' +
+                ", location='" + location + '\'' +
+                ", league=" + league +
+                '}';
+    }
 }

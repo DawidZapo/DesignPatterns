@@ -1,7 +1,7 @@
 package dawidzapo.behavioral.observer.complex_case.observer;
 
-import dawidzapo.behavioral.observer.complex_case.subject.NbaGame;
+import dawidzapo.behavioral.observer.complex_case.subject.Game;
 
 public interface Observer {
-    void update(NbaGame nbaGame);
+    void getNotification(String message, Game game);
 }

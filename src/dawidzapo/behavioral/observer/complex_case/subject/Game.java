@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NbaGame implements Subject{
+public class Game implements Subject{
     private Club club1;
     private Club club2;
     private LocalDateTime timeStart;
@@ -20,23 +20,38 @@ public class NbaGame implements Subject{
     private List<Observer> gameEndSubscribers = new ArrayList<>();
     private List<Observer> gameReminderSubscribers = new ArrayList<>();
 
-    public NbaGame(Club club1, Club club2) {
+    public Game(Club club1, Club club2) {
         this.club1 = club1;
         this.club2 = club2;
-        this.timeStart = LocalDateTime.now();
-        this.gameDuration = Duration.ZERO;
-    }
-
-    public void setTimeEnd(LocalDateTime timeEnd) {
-        this.timeEnd = timeEnd;
     }
 
     public void setGameDuration(Duration gameDuration) {
         this.gameDuration = gameDuration;
     }
-
-    public void setFinalScore(String finalScore) {
+    public void callClutchTime(){
+        clutchTimeSubscribers.forEach(profile -> profile.getNotification("Clutch time!", this));
+    }
+    public void matchReminder(){
+        gameReminderSubscribers.forEach(profile -> profile.getNotification("Match will shortly begin", this));
+    }
+    public void startMatch(){
+        this.timeStart = LocalDateTime.now();
+        this.gameDuration = Duration.ZERO;
+        gameStartSubscribers.forEach(profile -> profile.getNotification("Match has started!", this));
+    }
+    public void endMatch(String finalScore) {
         this.finalScore = finalScore;
+        this.timeEnd = LocalDateTime.now();
+        this.gameDuration = Duration.between(timeStart,timeEnd);
+        gameEndSubscribers.forEach(profile -> profile.getNotification("Match has ended!", this));
+    }
+
+    public Club getClub1() {
+        return club1;
+    }
+
+    public Club getClub2() {
+        return club2;
     }
 
     @Override
@@ -69,17 +84,13 @@ public class NbaGame implements Subject{
 
     @Override
     public String toString() {
-        return "NbaGame{" +
+        return "Game{" +
                 "club1=" + club1 +
                 ", club2=" + club2 +
                 ", timeStart=" + timeStart +
                 ", timeEnd=" + timeEnd +
                 ", gameDuration=" + gameDuration +
                 ", finalScore='" + finalScore + '\'' +
-                ", clutchTimeSubscribers=" + clutchTimeSubscribers +
-                ", gameStartSubscribers=" + gameStartSubscribers +
-                ", gameEndSubscribers=" + gameEndSubscribers +
-                ", gameReminderSubscribers=" + gameReminderSubscribers +
                 '}';
     }
 }
