@@ -39,6 +39,8 @@ public abstract class Game {
             player2.addGame();
             System.out.println("Game won by: " + player2.getFullName());
         }
+        player1.setPoints(0);
+        player2.setPoints(0);
     }
     protected abstract boolean isGameOver(int player1Points, int player2Points);
     protected void changeServer(){

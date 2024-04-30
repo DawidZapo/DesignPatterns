@@ -38,4 +38,9 @@ public class Player {
     public void setServing(boolean serving) {
         this.serving = serving;
     }
+
+    public void setPoints(int points) {
+        this.points = points;
+    }
+
 }
