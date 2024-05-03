@@ -1,6 +1,6 @@
-package dawidzapo.creational.factory_method.factory;
+package dawidzapo.creational.factory_method.racket_case.factory;
 
-import dawidzapo.creational.factory_method.rackets.Racket;
+import dawidzapo.creational.factory_method.racket_case.rackets.Racket;
 
 public abstract class Factory {
 

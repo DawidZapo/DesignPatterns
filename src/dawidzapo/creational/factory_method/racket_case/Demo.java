@@ -1,8 +1,8 @@
-package dawidzapo.creational.factory_method;
+package dawidzapo.creational.factory_method.racket_case;
 
-import dawidzapo.creational.factory_method.factory.Factory;
-import dawidzapo.creational.factory_method.factory.WilsonFactory;
-import dawidzapo.creational.factory_method.factory.YonexFactory;
+import dawidzapo.creational.factory_method.racket_case.factory.Factory;
+import dawidzapo.creational.factory_method.racket_case.factory.WilsonFactory;
+import dawidzapo.creational.factory_method.racket_case.factory.YonexFactory;
 
 public class Demo {
 

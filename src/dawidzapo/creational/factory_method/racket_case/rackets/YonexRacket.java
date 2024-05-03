@@ -1,4 +1,4 @@
-package dawidzapo.creational.factory_method.rackets;
+package dawidzapo.creational.factory_method.racket_case.rackets;
 
 public class YonexRacket implements Racket{
     @Override
