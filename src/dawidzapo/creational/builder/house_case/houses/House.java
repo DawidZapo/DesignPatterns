@@ -1,4 +1,4 @@
-package dawidzapo.creational.builder.houses;
+package dawidzapo.creational.builder.house_case.houses;
 
 public class House {
     private final HouseType houseType;

@@ -1,7 +1,7 @@
-package dawidzapo.creational.builder.builders;
+package dawidzapo.creational.builder.house_case.builders;
 
-import dawidzapo.creational.builder.houses.House;
-import dawidzapo.creational.builder.houses.HouseType;
+import dawidzapo.creational.builder.house_case.houses.House;
+import dawidzapo.creational.builder.house_case.houses.HouseType;
 
 public class HouseBuilder implements Builder {
 

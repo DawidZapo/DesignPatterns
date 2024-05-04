@@ -1,7 +1,7 @@
-package dawidzapo.creational.builder.director;
+package dawidzapo.creational.builder.house_case.director;
 
-import dawidzapo.creational.builder.builders.Builder;
-import dawidzapo.creational.builder.houses.HouseType;
+import dawidzapo.creational.builder.house_case.builders.Builder;
+import dawidzapo.creational.builder.house_case.houses.HouseType;
 
 public class Director {
     public void buildModernHouse(Builder builder){

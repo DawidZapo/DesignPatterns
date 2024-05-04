@@ -1,8 +1,8 @@
-package dawidzapo.creational.builder;
+package dawidzapo.creational.builder.house_case;
 
-import dawidzapo.creational.builder.builders.HouseBuilder;
-import dawidzapo.creational.builder.director.Director;
-import dawidzapo.creational.builder.houses.House;
+import dawidzapo.creational.builder.house_case.builders.HouseBuilder;
+import dawidzapo.creational.builder.house_case.director.Director;
+import dawidzapo.creational.builder.house_case.houses.House;
 
 public class Demo {
     public static void main(String[] args) {

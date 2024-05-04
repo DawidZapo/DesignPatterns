@@ -1,6 +1,6 @@
-package dawidzapo.creational.builder.builders;
+package dawidzapo.creational.builder.house_case.builders;
 
-import dawidzapo.creational.builder.houses.HouseType;
+import dawidzapo.creational.builder.house_case.houses.HouseType;
 
 public interface Builder {
     void setHouseType(HouseType houseType);
