@@ -1,6 +1,6 @@
-package dawidzapo.behavioral.memento.snapshot;
+package dawidzapo.behavioral.memento.stas_case.snapshot;
 
-import dawidzapo.behavioral.memento.source.Stats;
+import dawidzapo.behavioral.memento.stas_case.source.Stats;
 
 import java.time.LocalDateTime;
 

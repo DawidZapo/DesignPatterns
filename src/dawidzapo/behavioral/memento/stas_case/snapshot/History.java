@@ -1,4 +1,4 @@
-package dawidzapo.behavioral.memento.snapshot;
+package dawidzapo.behavioral.memento.stas_case.snapshot;
 
 import java.util.List;
 import java.util.Stack;
