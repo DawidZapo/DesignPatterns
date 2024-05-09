@@ -32,7 +32,14 @@ public class Match {
         this.away = away;
     }
 
+    public List<Play> getPlays() {
+        return plays;
+    }
+
     public void setPlays(List<Play> plays) {
         this.plays = plays;
+    }
+    public void addPlay(Play play){
+        plays.add(play);
     }
 }

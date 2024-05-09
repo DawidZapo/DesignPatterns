@@ -17,4 +17,20 @@ public class Team {
         this.players = new ArrayList<>();
         this.timeouts = 0;
     }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPlayers(List<Player> players) {
+        this.players = players;
+    }
+
+    public void setTimeouts(int timeouts) {
+        this.timeouts = timeouts;
+    }
 }

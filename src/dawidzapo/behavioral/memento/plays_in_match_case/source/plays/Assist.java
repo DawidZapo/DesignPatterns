@@ -1,19 +1,21 @@
 package dawidzapo.behavioral.memento.plays_in_match_case.source.plays;
 
-import dawidzapo.behavioral.memento.plays_in_match_case.source.Match;
 import dawidzapo.behavioral.memento.plays_in_match_case.source.plays.enums.Zone;
-
-import java.time.LocalDateTime;
 
 public class Assist extends Play{
     private Zone fromZone;
     private Zone toZone;
     private Long assistToPlayerId;
 
-    public Assist(Long id, LocalDateTime localDateTime, Long playerId, Match matchId, Zone fromZone, Zone toZone, Long assistToPlayerId) {
-        super(id, localDateTime, playerId, matchId);
+    public void setFromZone(Zone fromZone) {
         this.fromZone = fromZone;
+    }
+
+    public void setToZone(Zone toZone) {
         this.toZone = toZone;
+    }
+
+    public void setAssistToPlayerId(Long assistToPlayerId) {
         this.assistToPlayerId = assistToPlayerId;
     }
 }
