@@ -3,6 +3,7 @@ package dawidzapo.behavioral.memento.plays_in_match_case.snapshot;
 import dawidzapo.behavioral.memento.plays_in_match_case.source.Match;
 import dawidzapo.behavioral.memento.plays_in_match_case.source.plays.Play;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Snapshot {
@@ -11,7 +12,7 @@ public class Snapshot {
 
     public Snapshot(Match match, List<Play> plays) {
         this.match = match;
-        this.plays = plays;
+        this.plays = new ArrayList<>(plays);
     }
     public void restore(){
         match.setPlays(plays);

@@ -2,6 +2,7 @@ package dawidzapo.behavioral.memento.plays_in_match_case;
 
 import dawidzapo.behavioral.memento.plays_in_match_case.builder.shot.ShotBuilder;
 import dawidzapo.behavioral.memento.plays_in_match_case.builder.shot.ShotDirector;
+import dawidzapo.behavioral.memento.plays_in_match_case.snapshot.Snapshot;
 import dawidzapo.behavioral.memento.plays_in_match_case.source.Match;
 import dawidzapo.behavioral.memento.plays_in_match_case.source.team.Team;
 
@@ -20,7 +21,18 @@ public class Demo {
         shotDirector.buildMissedContestedTopOfTheKeyThree(1L, 1L, shotBuilder);
         match.addPlay(shotBuilder.getResult());
 
-        System.out.println(match.getPlays().get(0));
-        System.out.println(match.getPlays().get(1));
+        shotDirector.buildMadeWideOpenRightCornerThree(1L,1L, shotBuilder);
+        match.addPlay(shotBuilder.getResult());
+
+        Snapshot snapshot = match.createSnapshot();
+
+        shotDirector.buildMadeHardContestedLeftWingTwo(1L, 1L, shotBuilder);
+        match.addPlay(shotBuilder.getResult());
+
+        System.out.println(match.getPlays().size());
+        snapshot.restore();
+        System.out.println(match.getPlays().size());
+
+
     }
 }
